@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Playlist Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Logo -->
+
+
+    <div class="container">
+        <h1>MoodiFy</h1>
+        <h2>MoodBased Music Playlist Generator</h2>
+
+        <div class="controls">
+            <label for="mood">Select Your Mood:</label>
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="energetic">Energetic</option>
+                <option value="calm">Calm</option>
+            </select>
+
+            <br>
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <option value="opium">0pium</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="classical">Classical</option>
+                <option value="dhh">Dhh</option>
+                <option value="classic-hip-hop">Classic hiphop</option>
+                <!-- Add more genres as needed -->
+            </select>
+            <br>
+
+            <button onclick="generatePlaylist()">Generate Playlist</button>
+        </div>
+
+        <div class="text-analysis">
+            <label for="textMood">Or Enter a Text to Analyze Mood:</label>
+            <input type="text" id="textMood" placeholder="Type something...">
+            <button onclick="analyzeText()">Analyze Text</button>
+        </div>
+
+        <div id="playlist" class="playlist"></div>
+    </div>
+
+
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>A web based mood based playlist Generator</p>
+            <ul class="footer-links">
+                <li><a href="https://amitfr.tech">About me</a></li>
+                <li><a href="https://github.com/Amit00008/">github</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
